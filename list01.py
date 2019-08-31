@@ -1,18 +1,20 @@
-string1 = "This is a"
-string2 = "short string."
-sentence = string1 + string2
-print("{}".format(sentence))
-print("{} {} {}".format("She is","very "*4,"beautiful."))
-m = len(sentence)
-print("{}".format(m))
-string1 = "My deliverable is due in May"
-string1_list1 = string1.split()
-string1_list2 = string1.split(" ",2)
-print(string1_list1)
-print("FIRST PIECE:{0} SECOND PIECE:{1} THIRD PIECE:{2}"\
-     .format(string1_list2[0], string1_list2[1], string1_list2[2]))
-string2 = "Your,deliverable,is,due,in,June"
-string2_list = string2.split(',')
-print(string2_list)
-print("{} {} {} {}".format(string2_list[1],string2_list[2],string2_list[5],string2_list[-1]))
-print("{}".format(','.join(string2_list)))
+#리스트를 만들기 위해서는 대괄호([])를 사용한다.
+#괄호(()),중괄호({}),대괄호([])
+#len()함수를 통해 리스트 내 원소의 수를 샌다.
+#max()함수와 min()함수는 최대 최소값을 갖는다.
+#count()함수는 리스트 내 특정 값이 등장한 횟수를 센다.
+a_list = [1,2,3]
+print(a_list)
+print("a_list has {} elements.".format(len(a_list)))
+print("the maximum value in a_list is {}.".format(max(a_list)))
+print("the minimum value in a_list is {}.".format(min(a_list)))
+another_list = ['printer',5,['star','circle',9]]
+print(another_list)
+print("another_list also has {} elements.".format(len(another_list)))
+print("5 is in another_list {} time.".format(another_list.count(5)))
+print(a_list[0])
+print(a_list[1])
+print(a_list[2])
+print(a_list[-1])
+print(a_list[-2])
+print(a_list[0:2])
